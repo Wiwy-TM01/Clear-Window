@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435E51572530BBA7003ED03B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E51562530BBA7003ED03B /* ChatViewController.swift */; };
 		43A9E550252CA697005F299D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9E54F252CA697005F299D /* AppDelegate.swift */; };
 		43A9E552252CA697005F299D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9E551252CA697005F299D /* SceneDelegate.swift */; };
 		43A9E554252CA697005F299D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9E553252CA697005F299D /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		435E51562530BBA7003ED03B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		43A9E54C252CA697005F299D /* Clear Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clear Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A9E54F252CA697005F299D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A9E551252CA697005F299D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		435E51592530BBB3003ED03B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				43A9E54F252CA697005F299D /* AppDelegate.swift */,
+				43A9E551252CA697005F299D /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		435E515A2530BBC3003ED03B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43A9E553252CA697005F299D /* ViewController.swift */,
+				435E51562530BBA7003ED03B /* ChatViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		435E515B2530BBE5003ED03B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				43A9E558252CA699005F299D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		435E515C2530BBF7003ED03B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				43A9E555252CA697005F299D /* Main.storyboard */,
+				43A9E55A252CA699005F299D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		43A9E543252CA697005F299D = {
 			isa = PBXGroup;
 			children = (
@@ -71,12 +108,10 @@
 		43A9E54E252CA697005F299D /* Clear Window */ = {
 			isa = PBXGroup;
 			children = (
-				43A9E54F252CA697005F299D /* AppDelegate.swift */,
-				43A9E551252CA697005F299D /* SceneDelegate.swift */,
-				43A9E553252CA697005F299D /* ViewController.swift */,
-				43A9E555252CA697005F299D /* Main.storyboard */,
-				43A9E558252CA699005F299D /* Assets.xcassets */,
-				43A9E55A252CA699005F299D /* LaunchScreen.storyboard */,
+				435E515B2530BBE5003ED03B /* Assets */,
+				435E51592530BBB3003ED03B /* Delegates */,
+				435E515A2530BBC3003ED03B /* Views */,
+				435E515C2530BBF7003ED03B /* Storyboards */,
 				43A9E55D252CA699005F299D /* Info.plist */,
 			);
 			path = "Clear Window";
@@ -88,7 +123,6 @@
 				A7607CFB975B38621FF61034 /* Pods-Clear Window.debug.xcconfig */,
 				57E70064325800CE7BD37DB0 /* Pods-Clear Window.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +242,7 @@
 			files = (
 				43A9E554252CA697005F299D /* ViewController.swift in Sources */,
 				43A9E550252CA697005F299D /* AppDelegate.swift in Sources */,
+				435E51572530BBA7003ED03B /* ChatViewController.swift in Sources */,
 				43A9E552252CA697005F299D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
