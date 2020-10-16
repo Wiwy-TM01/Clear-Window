@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		434BF1F9253A039E0048BED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434BF1F8253A039E0048BED0 /* Main.storyboard */; };
+		434BF1FD253A3B980048BED0 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BF1FC253A3B980048BED0 /* PlayerView.swift */; };
 		435E51572530BBA7003ED03B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E51562530BBA7003ED03B /* ChatViewController.swift */; };
 		43A9E550252CA697005F299D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9E54F252CA697005F299D /* AppDelegate.swift */; };
 		43A9E552252CA697005F299D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9E551252CA697005F299D /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		434BF1F8253A039E0048BED0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		434BF1FC253A3B980048BED0 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		435E51562530BBA7003ED03B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		43A9E54C252CA697005F299D /* Clear Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clear Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A9E54F252CA697005F299D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				43A9E553252CA697005F299D /* LiveStreamViewController.swift */,
+				434BF1FC253A3B980048BED0 /* PlayerView.swift */,
 				435E51562530BBA7003ED03B /* ChatViewController.swift */,
 			);
 			path = Views;
@@ -243,6 +246,7 @@
 				43A9E554252CA697005F299D /* LiveStreamViewController.swift in Sources */,
 				43A9E550252CA697005F299D /* AppDelegate.swift in Sources */,
 				435E51572530BBA7003ED03B /* ChatViewController.swift in Sources */,
+				434BF1FD253A3B980048BED0 /* PlayerView.swift in Sources */,
 				43A9E552252CA697005F299D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
