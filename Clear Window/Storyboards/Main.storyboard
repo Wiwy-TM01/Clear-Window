@@ -8,18 +8,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Live Stream View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clear_Window" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LiveStreamViewController" customModule="Clear_Window" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="LiveStreamView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP7-IV-Ozb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <containerView opaque="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ad-DC-0zH" userLabel="ChatContainerView">
-                                <rect key="frame" x="174" y="44" width="240" height="818"/>
+                                <rect key="frame" x="234" y="0.0" width="180" height="896"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="T8B-dA-ntW"/>
+                                    <constraint firstAttribute="width" constant="240" id="T8B-dA-ntW">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="180"/>
+                                    </constraint>
                                 </constraints>
                                 <connections>
                                     <segue destination="10b-iy-U6f" kind="embed" id="PRH-CM-5sO"/>
@@ -29,11 +35,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2ad-DC-0zH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KNf-SO-VPo"/>
-                            <constraint firstItem="2ad-DC-0zH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ffL-hp-EmS"/>
-                            <constraint firstItem="2ad-DC-0zH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nMk-yI-IKw"/>
+                            <constraint firstAttribute="bottom" secondItem="dP7-IV-Ozb" secondAttribute="bottom" id="UtY-du-fNz"/>
+                            <constraint firstAttribute="trailing" secondItem="2ad-DC-0zH" secondAttribute="trailing" id="W9K-Ss-1Ta"/>
+                            <constraint firstItem="dP7-IV-Ozb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WAK-L6-Wg1"/>
+                            <constraint firstAttribute="bottom" secondItem="2ad-DC-0zH" secondAttribute="bottom" id="e3r-Vf-mw5"/>
+                            <constraint firstItem="2ad-DC-0zH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eun-kX-sj2"/>
+                            <constraint firstAttribute="trailing" secondItem="dP7-IV-Ozb" secondAttribute="trailing" id="pYd-ab-Hhp"/>
+                            <constraint firstItem="dP7-IV-Ozb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qwy-uk-jBo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playerView" destination="dP7-IV-Ozb" id="QZP-UJ-hAb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,8 +57,9 @@
             <objects>
                 <viewController id="10b-iy-U6f" customClass="ChatViewController" customModule="Clear_Window" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DA8-dC-lI2" userLabel="ChatView">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="818"/>
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="97Q-sf-g1a"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                 </viewController>
