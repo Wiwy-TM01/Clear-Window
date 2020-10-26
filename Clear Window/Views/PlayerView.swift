@@ -8,6 +8,8 @@
 import UIKit
 import AVKit
 
+// TODO: Move PlayerView logic from ViewController to here
+
 class PlayerView: UIView {
     var player: AVPlayer? {
         get {
